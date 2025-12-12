@@ -47,10 +47,20 @@ public class ArcadeGamesApplication {
 				arcadeService.searchGame(gameName);
 			}
 			
+			else if(choose.equals("4"))
+			{
+				arcadeService.hardcoreGAmes();
+			}
+			
 			else if (choose.equals("5"))
 			{
 				isRunning = false;
 				System.out.println("Ciao!1 <3");
+			}
+			
+			else
+			{
+				System.out.println("Commando innesistente. Provare un commando funzionate (1-5)");
 			}
 			
 			

@@ -1,6 +1,7 @@
 package service;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import models.Arcade;
 
@@ -29,6 +30,17 @@ public class ArcadeService {
 			if (this.arcades.get(i).getName().equals(search));
 			{
 				System.out.println("Il nome del gioco è " + this.arcades.get(i).getName()+" è uscito l'anno "+this.arcades.get(i).getRelease()+" e la sua difficoltà è "+this.arcades.get(i).getDifficultLevel());
+			}
+		}
+	}
+	
+	public void hardcoreGAmes()
+	{
+		for (int i = 0; i < this.arcades.size(); i++) 
+		{
+			if(this.arcades.get(i).getDifficultLevel()>=4)
+			{
+				System.out.println("I giochi con difficoltà maggiore di difficoltà > di 3 sono " + this.arcades.get(i));
 			}
 		}
 	}
