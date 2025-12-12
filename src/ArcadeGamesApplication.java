@@ -49,7 +49,11 @@ public class ArcadeGamesApplication {
 			
 			else if(choose.equals("4"))
 			{
-				arcadeService.hardcoreGAmes();
+				System.out.println("Da quale livello di difficoltà vuoi vedere i giochi? ");
+				int level = scanner.nextInt();
+				scanner.nextLine();
+				arcadeService.hardcoreGames(level);
+				
 			}
 			
 			else if (choose.equals("5"))

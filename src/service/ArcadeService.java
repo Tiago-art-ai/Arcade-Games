@@ -34,11 +34,11 @@ public class ArcadeService {
 		}
 	}
 	
-	public void hardcoreGAmes()
+	public void hardcoreGames(int level)
 	{
 		for (int i = 0; i < this.arcades.size(); i++) 
 		{
-			if(this.arcades.get(i).getDifficultLevel()>=4)
+			if(this.arcades.get(i).getDifficultLevel()>=level)
 			{
 				System.out.println("I giochi con difficoltà maggiore di difficoltà > di 3 sono " + this.arcades.get(i));
 			}
